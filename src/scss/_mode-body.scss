@@ -1,0 +1,51 @@
+@import "./variables";
+.darkmode {
+  &::-webkit-scrollbar {
+    width: 6px !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $text-color !important;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa !important;
+  }
+
+  background-color: $body-bg-color !important;
+  color: $text-color !important;
+  .navbar {
+    .navbar-brand {
+      color: $text-color !important;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: white !important;
+        }
+        .toggleMode {
+          color: white !important;
+        }
+      }
+    }
+  }
+  .landing {
+    .container-fluid {
+      .row {
+        .text-col {
+          .text-box {
+            small {
+              color: #bbb;
+            }
+            p {
+              color: #bbb;
+            }
+          }
+        }
+      }
+    }
+  }
+  .line {
+    background-color: #fff !important;
+  }
+}
